@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/medalinouira/Xamarin.Forms.Toolkit.Behaviors</licenseUrl>
+    <projectUrl>https://github.com/medalinouira/Xamarin.Forms.Toolkit.Behaviors</projectUrl>
+    <iconUrl>https://github.com/medalinouira/Xamarin.Forms.ToolKit.Behaviors/blob/master/Xamarin.Forms.ToolKit.Behaviors/ic_xfb.png?raw=true</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>EventToCommandBehavior.</releaseNotes>
+    <copyright>Copyright (c) Mohamed Ali NOUIRA. All rights reserved.</copyright>
+    <tags>Xamarin Xamarin.Forms Behavior Behaviors</tags>
+  </metadata>
+</package>

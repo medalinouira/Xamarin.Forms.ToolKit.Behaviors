@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sample.Views.EventToCommandBehaviorView"
+             xmlns:b="clr-namespace:Xamarin.Forms.ToolKit.Behaviors;assembly=Xamarin.Forms.ToolKit.Behaviors"
+             Title="EventToCommand Behavior"
+             BindingContext="{Binding EventToCommandBehavior, Source={StaticResource Locator}}">
+    
+    <ContentView x:Name="contentView"
+                     ControlTemplate="{StaticResource MyTemplate}">
+
+        <ListView VerticalOptions="CenterAndExpand"
+                  HorizontalOptions="CenterAndExpand"
+                  ItemsSource="{Binding Items}">
+            
+            <ListView.Behaviors>
+                <b:EventToCommandBehavior EventName="ItemTapped"
+                                          Command="{Binding SelectedItemCommand}"
+                                          CommandParameter="{Binding .}"
+                                          EventArgsConverter="{StaticResource SelectedItemConverter}"/>
+
+            </ListView.Behaviors>
+            
+        </ListView>
+
+    </ContentView>
+    
+</ContentPage>
